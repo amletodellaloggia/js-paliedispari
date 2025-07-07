@@ -36,5 +36,15 @@ function playEvenOdd() {
   // 5. Determino se la somma è pari o dispari passando 'sum' a una funzione dedicata che creo in testa, e creo una variabile dedicata dove salvarne l'esito
   const result = isEvenOdd(sum);
 
-  
+  // 6. Decido chi ha vinto confrontando la scelta dell'utente con il risultato
+		// 6.1 Dichiaro una variabile dedicata che restituisce un messaggio in base a un confronto di uguaglianza
+		let vincitore;
+
+		// 6.2 Utilizzo 'if' ed 'else' per decidere
+		if (result === userChoice) {
+			winner = "Hai vinto!"; // L'utente ha indovinato il risultato
+		} else {
+			winner = "Ha vinto il computer."; // Altrimenti vince il computer
+		}
+
 }
