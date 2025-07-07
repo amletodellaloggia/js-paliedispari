@@ -9,6 +9,16 @@ function generateComputerNumber() {
   return Math.floor(Math.random() * 5) + 1;
 }
 
+// Funzione che verifica se un numero è pari o dispari
+function isEvenOdd(num) {
+  // Controllo se il resto della divisione per 2 è zero
+  if (num % 2 === 0) {
+    return "pari"; // Se resto zero, è pari
+  } else {
+    return "dispari"; // Altrimenti dispari
+  }
+}
+
 // Creo la funzione per giocare
 function playEvenOdd() {
   // 1. Chiedo all'utente di scegliere "pari" o "dispari"
@@ -22,4 +32,9 @@ function playEvenOdd() {
 
   // 4. Sommo i numeri scelti dall'utente e dal computer e li salvo in una variabile dedicata
   const sum = userNumber + computerNumber;
+
+  // 5. Determino se la somma è pari o dispari passando 'sum' a una funzione dedicata che creo in testa, e creo una variabile dedicata dove salvarne l'esito
+  const result = isEvenOdd(sum);
+
+  
 }
