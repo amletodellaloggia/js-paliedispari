@@ -1,5 +1,5 @@
 // SVOLGIMENTO
-// Pari e Dispari
+// PARI E DISPARI
 
 // Ho bisogno di creare tre funzioni, una per generare un numero random per il pc, un'altra per giocare contro il pc e un'ulteriore per stabilire se il risultato della somma dei due numeri (random del pc + numero dell'utente) è pari o dispari
 
@@ -13,6 +13,13 @@ function generateComputerNumber() {
 function playEvenOdd() {
   // 1. Chiedo all'utente di scegliere "pari" o "dispari"
   const userChoice = prompt("Scegli pari o dispari:");
-  // 2. Chiedo all'utente di inserire un numero da 1 a 5 e lo salvo in una funzione dedicata
+
+  // 2. Chiedo all'utente di inserire un numero da 1 a 5 e lo salvo in una variabile dedicata
   const userNumber = parseInt(prompt("Inserisci un numero da 1 a 5:"), 10);
+
+  // 3. Genero il numero casuale per il computer e lo salvo in una variabile dedicata
+  const computerNumber = generateComputerNumber();
+
+  // 4. Sommo i numeri scelti dall'utente e dal computer e li salvo in una variabile dedicata
+  const sum = userNumber + computerNumber;
 }
