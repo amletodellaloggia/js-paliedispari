@@ -20,3 +20,6 @@ function verifyPalindrome() {
     console.log(`La parola che hai inserito non è palindroma.`);
   }
 }
+
+// La funzione quindi entra in gioco, viene chiamata e ha effetto
+verifyPalindrome();
