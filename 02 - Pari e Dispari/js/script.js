@@ -47,4 +47,10 @@ function playEvenOdd() {
 			winner = "Ha vinto il computer."; // Altrimenti vince il computer
 		}
 
+  // 7. Creo una stringa con tutti i risultati del gioco e la stampo in console
+  return "Scelta utente: " + userChoice + " | " + // Se utente ha scelto pari o dispari
+         "Numero utente: " + userNumber + " | " + // Il numero inserito dall'utente
+         "Numero computer: " + computerNumber + " | " + //Il numero generato per il computer
+         "Somma tra il tuo numero e quello del computer: " + sum + " (" + result + ") | " + // La somma tra i numeri dell'utente e del computer
+         "Risultato: " + winner; // Chi dei due ha vinto
 }
